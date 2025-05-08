@@ -1,0 +1,103 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-image: url('/mnt/data/matrix-code-background-uhdpaper.com-hd-8.2832.jpg'); /* Thêm ảnh nền mới */
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Lớp nền mờ để chữ dễ đọc hơn */
+    border-radius: 15px;
+    width: 80%;
+    margin: 50px auto;
+    border: 2px solid #ffcc00; /* Viền vàng đậm */
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.8); /* Hiệu ứng ánh sáng */
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffcc00; /* Màu vàng đặc trưng của casino */
+    text-shadow: 2px 2px 5px #ff0000; /* Ánh sáng xung quanh chữ */
+    margin-bottom: 20px;
+}
+
+.wheel-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#rouletteWheel {
+    border-radius: 50%;
+    background-color: #222222;
+    box-shadow: 0px 0px 15px #ffcc00; /* Ánh sáng quanh vòng quay */
+}
+
+#countdown, #analysisStatus, #result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#countdown {
+    color: #ff0000; /* Màu đỏ cho đếm ngược */
+}
+
+#analysisStatus {
+    color: #00ff00; /* Màu xanh lá cây cho trạng thái phân tích */
+}
+
+#result {
+    font-size: 30px;
+    color: #ffcc00; /* Màu vàng cho kết quả */
+    text-shadow: 1px 1px 3px #ff0000; /* Ánh sáng xung quanh kết quả */
+}
+
+#randomNumber {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+#evenOdd {
+    font-size: 32px;
+    font-weight: bold;
+    color: #00ff00;
+}
+
+/* Adding hacker image as background */
+body { background-image: url('/mnt/data/hacker-guy-fawkes-mask-code-black-hoodie-5k-8k-3840x2160-5575.jpg'); background-size: cover; }
+
+/* Adding new background image */
+body { background-image: url('/mnt/data/7bc2ee26-7398-48de-b777-f5b39b2c58eb.png'); background-size: cover; }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+    }
+    h1 {
+        font-size: 3em;
+        color: gold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+    .countdown {
+        font-size: 2em;
+        font-weight: bold;
+        color: red;
+    }
+    .message {
+        font-size: 1.5em;
+        margin-top: 20px;
+        color: yellow;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    }
+    

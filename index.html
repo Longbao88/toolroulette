@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Casino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="new-image-container" style="margin-top: 20px;">
+        <img src="/mnt/data/resized_new_image.png" alt="New Image" style="width: 100%; max-width: 600px; height: auto;">
+    </div>
+    
+    <div class="container">
+        <h1>AI Casino: Kết Quả Dự Đoán</h1>
+        <div class="wheel-container">
+            <!-- Thay thế bằng AI phân tích -->
+            <div id="aiAnalysis">
+                <p><span style="color: #ff0000;">AI đang phân tích... 
+    <div id="gif-container" style="margin-top: 20px;">
+        <img src="/mnt/data/giphy.gif" alt="AI Analysis" style="width: 100%; max-width: 600px; height: auto;">
+    </div>
+    </span></p>
+            </div>
+        </div>
+        <p id="countdown">VÁN TIẾP THEO SAU</p>
+        <p id="analysisStatus"></p>
+        <p id="result">12 Số Dự Đoán: <span id="randomNumber"></span> | Dự Đoán Chẵn/Lẻ: <span id="evenOdd"></span></p>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+        let countdownTime = 30;  // Giây ban đầu
+        let countdownElement = document.getElementById('countdown');
+        let messageElement = document.getElementById('message');
+
+        // Hàm đếm ngược
+        function startCountdown() {
+            countdownElement.textContent = countdownTime + " giây";
+            messageElement.textContent = "AI đang phân tích... 
+    <div id="gif-container" style="margin-top: 20px;">
+        <img src="/mnt/data/giphy.gif" alt="AI Analysis" style="width: 100%; max-width: 600px; height: auto;">
+    </div>
+    ";
+
+            let countdownInterval = setInterval(function() {
+                countdownTime--;
+
+                // Cập nhật thời gian còn lại
+                countdownElement.textContent = countdownTime + " giây";
+
+                if (countdownTime <= 0) {
+                    clearInterval(countdownInterval);  // Dừng đếm ngược
+
+                    messageElement.textContent = "Phân tích hoàn tất!";
+                    
+                    setTimeout(function() {
+                        messageElement.textContent = "Đang khởi động lại phân tích...";
+                        countdownTime = 30; // Reset thời gian
+                        startCountdown(); // Bắt đầu lại đếm ngược
+                    }, 2000);  // Sau 2 giây, bắt đầu lại
+                }
+            }, 1000); // Chạy mỗi giây
+        }
+
+        // Bắt đầu đếm ngược ngay khi tải trang
+        startCountdown();
+    </script>
+    
+
+<script>
+    let countdownTime = 30;  // Giây ban đầu
+    let countdownElement = document.getElementById('countdown');
+    let messageElement = document.getElementById('message');
+
+    // Hàm đếm ngược
+    function startCountdown() {
+        countdownElement.textContent = countdownTime + " giây";
+        messageElement.textContent = "AI đang phân tích... 
+    <div id="gif-container" style="margin-top: 20px;">
+        <img src="/mnt/data/giphy.gif" alt="AI Analysis" style="width: 100%; max-width: 600px; height: auto;">
+    </div>
+    ";
+
+        let countdownInterval = setInterval(function() {
+            countdownTime--;
+
+            // Cập nhật thời gian còn lại
+            countdownElement.textContent = countdownTime + " giây";
+
+            if (countdownTime <= 0) {
+                clearInterval(countdownInterval);  // Dừng đếm ngược
+                messageElement.textContent = "Phân tích hoàn tất!";
+                
+                // Sau 2 giây, bắt đầu lại đếm ngược
+                setTimeout(function() {
+                    messageElement.textContent = "Đang khởi động lại phân tích...";
+                    countdownTime = 30; // Reset thời gian
+                    startCountdown(); // Bắt đầu lại đếm ngược
+                }, 2000);  // Đợi 2 giây trước khi bắt đầu lại
+            }
+        }, 1000); // Chạy mỗi giây
+    }
+
+    // Bắt đầu đếm ngược ngay khi tải trang
+    startCountdown();
+</script>
+
+</body>
+</html>
