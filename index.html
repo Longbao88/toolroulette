@@ -17,7 +17,7 @@
         <div class="wheel-container">
             <!-- Thay thế bằng AI phân tích -->
             <div id="aiAnalysis">
-                <p><span style="color: #ff0000;">AI đang phân tích... 
+                <p><span style="color: #ff0000;"><span id="aiAnalysisText" style="font-size: 20px; font-weight: bold; color: red; animation: moveText 2s infinite;">AI đang phân tích...</span> 
     <div id="gif-container" style="margin-top: 20px;">
         <img src="./images/giphy.gif" alt="AI Analysis" style="width: 100%; max-width: 600px; height: auto;">
     </div>
@@ -26,7 +26,7 @@
         </div>
         <p id="countdown">VÁN TIẾP THEO SAU</p>
         <p id="analysisStatus"></p>
-        <p id="result">12 Số Dự Đoán: <span id="randomNumber"></span> | Dự Đoán Chẵn/Lẻ: <span id="evenOdd"></span></p>
+        <p id="result">Số Dự Đoán: <span id="randomNumber"></span> | Dự Đoán Chẵn/Lẻ: <span id="evenOdd"></span></p>
     </div>
     <script src="script.js"></script>
 
@@ -38,7 +38,7 @@
         // Hàm đếm ngược
         function startCountdown() {
             countdownElement.textContent = countdownTime + " giây";
-            messageElement.textContent = "AI đang phân tích... 
+            messageElement.textContent = "<span id="aiAnalysisText" style="font-size: 20px; font-weight: bold; color: red; animation: moveText 2s infinite;">AI đang phân tích...</span> 
     <div id="gif-container" style="margin-top: 20px;">
         <img src="./images/giphy.gif" alt="AI Analysis" style="width: 100%; max-width: 600px; height: auto;">
     </div>
@@ -77,7 +77,7 @@
     // Hàm đếm ngược
     function startCountdown() {
         countdownElement.textContent = countdownTime + " giây";
-        messageElement.textContent = "AI đang phân tích... 
+        messageElement.textContent = "<span id="aiAnalysisText" style="font-size: 20px; font-weight: bold; color: red; animation: moveText 2s infinite;">AI đang phân tích...</span> 
     <div id="gif-container" style="margin-top: 20px;">
         <img src="./images/giphy.gif" alt="AI Analysis" style="width: 100%; max-width: 600px; height: auto;">
     </div>
@@ -107,6 +107,10 @@
     startCountdown();
 </script>
 
+
+<div id="banner" style="position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.7); color: white; padding: 10px 20px; font-size: 16px; border-radius: 5px; z-index: 1000;">
+    ĐĂNG KÍ TẠI: <a href="https://www.f168.codes" style="color: #ffcc00; text-decoration: none;">WWW.F168.CODES</a>
+</div>
 </body>
 </html>
 

@@ -101,3 +101,103 @@ body { background-image: url('/mnt/data/7bc2ee26-7398-48de-b777-f5b39b2c58eb.png
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     }
     
+/* Ensure the body takes up full screen and the background covers the entire viewport */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url('./images/new_background_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Make sure the images fill the screen and are responsive */
+#new-image-container img, #gif-container img {
+    width: 100%;
+    height: 100vh; /* Make the image fill the full height of the viewport */
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+/* Adjust the container for the main content to prevent overflow */
+.container {
+    position: relative;
+    z-index: 10;
+    color: white;
+    padding: 20px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Parallax background effect for the website */
+body {
+    background-attachment: fixed;
+}
+
+/* Add animations for images to zoom in as they come into view */
+#new-image-container img, #gif-container img {
+    animation: zoomIn 2s ease-out;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Smooth text animation on scroll */
+h1 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add subtle scroll effect to images inside containers */
+.container {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.5s forwards;
+    animation-delay: 1s;
+}
+
+/* Animation for AI analysis text */
+@keyframes moveText {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Animation for spinning text */
+@keyframes spinText {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
